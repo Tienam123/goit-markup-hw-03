@@ -1,4 +1,12 @@
 /* Обнуление */
+ul,
+p,
+h1,
+h2,
+h3 {
+	margin: 0;
+	padding: 0;
+}
 
 li {
 	list-style-type: none;
@@ -49,9 +57,12 @@ body {
 	text-decoration: none;
 }
 
+/* Тег который покрашен синим */
 .first-logo {
 	color: var(--primary-brand);
 }
+
+/* Навигация */
 
 .nav-menu {
 	font-weight: 500;
@@ -67,77 +78,76 @@ body {
 	color: var(--pressed-state);
 }
 
+/* Адрес */
+
 address {
 	font-style: normal;
 }
 
-/* .adress-mail */
-
-.adress-mail-link {
+.adress-link {
 	text-decoration: none;
 	color: var(--text);
 }
 
-.adress-mail-link:active,
-.adress-mail-link:focus,
-.adress-mail-link:hover {
-	color: var(--pressed-state);
-}
-
-/* .adress-tel {} */
-
-.adress-tel-link {
-	text-decoration: none;
-	color: var(--text);
-}
-
-.adress-tel-link:active,
-.adress-tel-link:focus,
-.adress-tel-link:hover {
+.adress-link:active,
+.adress-link:focus,
+.adress-link:hover {
 	color: var(--pressed-state);
 }
 
 /* Main Index */
+
 /* Hero section */
 
 .hero {
 	background-color: var(--dark-text-state);
+	text-align: center;
 }
 
 .hero h1 {
 	font-weight: 700;
 	font-size: 56px;
 	line-height: 1.07;
-	text-align: center;
 	color: #ffffff;
 }
 
-.hero-button {
-	background: var(--primary-brand);
+/* Styles Button */
+
+.button {
+	cursor: pointer;
+
+	border-radius: 4px;
+	border: 1px solid transparent;
+}
+
+.button.hero {
+	background-color: var(--primary-brand);
 	color: #ffffff;
+
+	width: 169px;
+	height: 56px;
+
 	font-family: "Roboto";
 	font-style: normal;
 	font-weight: 500;
 	font-size: 16px;
 	line-height: 1.5;
 	letter-spacing: 0.04em;
-	cursor: pointer;
 }
 
-.hero-button:hover,
-.hero-button:active,
-.hero-button:focus {
+.button.hero:hover,
+.button.hero:active,
+.button.hero:focus {
 	background-color: var(--pressed-state);
 	color: #ffffff;
 }
 
-.text-hero-button {
-	color: #ffffff;
-}
-
-/* Main Index */
-
 /* Quality section */
+
+/* .quality-list {} */
+
+/* .list-item {} */
+
 .quality h2 {
 	display: none;
 	font-weight: 700;
@@ -150,8 +160,6 @@ address {
 	font-size: 20px;
 	color: var(--dark-text-state);
 }
-
-/* .quality-item {} */
 
 /* Gallery section */
 
