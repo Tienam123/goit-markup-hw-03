@@ -57,6 +57,29 @@ body {
 	text-decoration: none;
 }
 
+.container {
+	width: 1158px;
+	padding-left: 15px;
+	padding-right: 15px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.page-header {
+	display: flex;
+}
+
+.logo.top {
+	display: block;
+
+	padding-top: 24px;
+	padding-bottom: 24px;
+}
+
+.nav {
+	display: flex;
+}
+
 /* Тег который покрашен синим */
 .first-logo {
 	color: var(--primary-brand);
@@ -66,11 +89,20 @@ body {
 
 .nav-menu {
 	font-weight: 500;
+	display: flex;
+	margin-left: 76px;
 }
 
-.nav-link {
+.nav-menu .menu-list + .menu-list {
+	margin-left: 40px;
+}
+.nav .nav-menu .menu-list .nav-link {
 	text-decoration: none;
 	color: var(--dark-text-state);
+	padding-top: 24px;
+	padding-bottom: 24px;
+
+	display: block;
 }
 
 .nav-link:active,
@@ -82,6 +114,31 @@ body {
 
 address {
 	font-style: normal;
+}
+
+.adress {
+	display: flex;
+
+	margin-left: 332px;
+}
+
+.adress .adress-list .adress-link.tel {
+	min-width: 153px;
+}
+
+.adress .adress-list .adress-link.tel {
+	min-width: 151px;
+}
+
+.adress .adress-list + .adress-list {
+	margin-left: 40px;
+}
+
+.adress .adress-list .adress-link {
+	display: block;
+
+	padding-top: 24px;
+	padding-bottom: 24px;
 }
 
 .adress-link {
