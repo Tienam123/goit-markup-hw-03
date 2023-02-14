@@ -163,17 +163,21 @@ address {
 
 /* Gallery section */
 
+/* ..galery {} */
+
 h2.gallery-title {
 	font-weight: 700;
 	font-size: 36px;
 	color: var(--dark-text-state);
 }
 
-/* .gallery-list {}
+/* .galery-list {} */
 
-.gallery-item {} */
+/* .list-item */
 
 /* Team-Section */
+
+/* .team{} */
 
 .team h2 {
 	font-weight: 700;
@@ -181,20 +185,18 @@ h2.gallery-title {
 	color: var(--dark-text-state);
 }
 
-.team h3 {
+.team .team-list .list-number h3 {
 	font-weight: 500;
 	font-size: 20px;
 	color: var(--dark-text-state);
 	text-align: center;
 }
 
-/* .team-list {
-}
+/* .team-list {}
 
-.team-number {
-} */
+.list-number {} */
 
-.team-number > p {
+.team .team-list .list-number p {
 	text-align: center;
 }
 
@@ -205,16 +207,17 @@ h2.gallery-title {
 
 /* Section Filter */
 
-.filter-button {
+.button.filter-button {
 	background-color: var(--light);
 	color: var(--pressed-state);
+
 	font-family: "Roboto";
 	font-style: normal;
 	font-weight: 500;
 	font-size: 16px;
 	line-height: 1.5;
 	letter-spacing: 0.04em;
-	cursor: pointer;
+	border: 1px solid #e7e9fc;
 }
 
 .filter-button:active,
@@ -251,7 +254,9 @@ h2 {
 	color: var(--dark-text-state);
 }
 
-.footer {
+/* FOOTER */
+
+.footer-page {
 	background-color: var(--dark-text-state);
 }
 
