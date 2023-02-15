@@ -208,6 +208,11 @@ address {
 
 /* Quality section */
 
+.quality.container {
+	padding-top: 120px;
+	padding-bottom: 60px;
+}
+
 .quality-list {
 	display: flex;
 	flex-wrap: wrap;
@@ -216,7 +221,6 @@ address {
 .quality .quality-list .list-item {
 	width: 264px;
 	margin-right: 24px;
-	margin-top: 120px;
 }
 
 .quality .quality-list .list-item:nth-child(4n) {
@@ -238,16 +242,17 @@ address {
 
 /* Gallery section */
 
-/* ..galery {} */
+.gallery {
+	padding-top: 60px;
+	padding-bottom: 120px;
+}
 
 h2.gallery-title {
 	font-weight: 700;
 	font-size: 36px;
 	color: var(--dark-text-state);
 	text-align: center;
-
-	margin-top: 120px;
-	margin-bottom: 120px;
+	margin-bottom: 72px;
 }
 
 .gallery-list {
@@ -263,14 +268,15 @@ h2.gallery-title {
 	margin-right: 0;
 }
 
-.gallery-list > .list-item:nth-last-child(-n + 3) {
-	margin-bottom: 120px;
-}
+/* .gallery-list > .list-item:nth-last-child(-n + 3) {
+} */
 
 /* Team-Section */
 
 .team {
 	background-color: var(--light);
+	padding-bottom: 120px;
+	padding-top: 120px;
 }
 
 .team h2 {
@@ -279,7 +285,6 @@ h2.gallery-title {
 	color: var(--dark-text-state);
 	text-align: center;
 
-	padding-top: 120px;
 	margin-bottom: 72px;
 }
 
@@ -287,10 +292,6 @@ h2.gallery-title {
 	display: flex;
 	flex-wrap: wrap;
 	text-align: center;
-}
-
-.team .team-list .list-number. img {
-	width: 264px;
 }
 
 .team .team-list .list-number {
@@ -302,9 +303,8 @@ h2.gallery-title {
 	margin-right: 0;
 }
 
-.team .team-list .list-number:nth-last-child(-n + 4) {
-	margin-bottom: 120px;
-}
+/* .team .team-list .list-number:nth-last-child(-n + 4) {
+} */
 
 .team .team-list .list-number h3 {
 	font-weight: 500;
@@ -415,20 +415,20 @@ h2.project-title {
 
 .footer-page {
 	background-color: var(--dark-text-state);
+	padding-top: 100px;
+	padding-bottom: 100px;
 }
 
 .about {
 	width: 264px;
 	color: var(--accent);
 	margin-top: 16px;
-	padding-bottom: 100px;
 }
 
 .logo.logo-footer {
 	display: inline-block;
 	color: var(--light);
 	text-decoration: none;
-	margin-top: 100px;
 }
 
 /* .flex-element:nth-last-child(-n + 3) {
