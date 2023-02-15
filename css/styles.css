@@ -69,6 +69,8 @@ body {
 	padding-right: 15px;
 	margin-left: auto;
 	margin-right: auto;
+
+	background-color: antiquewhite;
 }
 
 .page-header {
@@ -208,9 +210,22 @@ address {
 
 /* Quality section */
 
-/* .quality-list {} */
+.quality.container {
+}
 
-/* .list-item {} */
+.quality-list {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.list-item {
+	width: 264px;
+	margin-right: 24px;
+}
+
+.list-item:nth-child(4n) {
+	margin-right: 0;
+}
 
 .quality h2 {
 	display: none;
@@ -233,11 +248,21 @@ h2.gallery-title {
 	font-weight: 700;
 	font-size: 36px;
 	color: var(--dark-text-state);
+	text-align: center;
 }
 
-/* .galery-list {} */
+.gallery-list {
+	display: flex;
+	flex-wrap: wrap;
+}
 
-/* .list-item */
+.gallery-list > .list-item {
+	width: 360px;
+	margin-right: 24px;
+}
+.gallery-list > .list-item:nth-child(3n) {
+	margin-right: 0;
+}
 
 /* Team-Section */
 
@@ -247,6 +272,7 @@ h2.gallery-title {
 	font-weight: 700;
 	font-size: 36px;
 	color: var(--dark-text-state);
+	text-align: center;
 }
 
 .team .team-list .list-number h3 {
@@ -256,12 +282,23 @@ h2.gallery-title {
 	text-align: center;
 }
 
-/* .team-list {}
+.team-list {
+	display: flex;
+	flex-wrap: wrap;
+	background-color: teal;
+}
 
-.list-number {} */
+.team .team-list .list-number. img {
+	width: 264px;
+}
 
-.team .team-list .list-number p {
-	text-align: center;
+.team .team-list .list-number {
+	background-color: tomato;
+	margin-right: 24px;
+}
+
+.team .team-list .list-number:nth-child(4n) {
+	margin-right: 0;
 }
 
 /* .team-number > h3 {
@@ -275,8 +312,11 @@ h2.gallery-title {
 .container.project {
 	text-align: center;
 }
-.project h1,
-h2 {
+.project h1 {
+	display: none;
+}
+
+.project h1 {
 	display: none;
 }
 /* 1158 */
