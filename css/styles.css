@@ -71,6 +71,11 @@ body {
 	margin-right: auto;
 }
 
+.flex-logo {
+	display: flex;
+	justify-content: space-between;
+}
+
 .page-header {
 	display: flex;
 	justify-content: space-between;
@@ -126,7 +131,6 @@ address {
 
 .adress {
 	display: flex;
-	text-align: right;
 }
 
 .adress .adress-list .adress-link.tel {
@@ -168,11 +172,20 @@ address {
 	text-align: center;
 }
 
+.container.hero-items {
+	padding-top: 188px;
+	padding-bottom: 188px;
+}
+
 .hero h1 {
 	font-weight: 700;
 	font-size: 56px;
 	line-height: 1.07;
 	color: #ffffff;
+
+	width: 494px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 /* Styles Button */
@@ -188,8 +201,10 @@ address {
 	background-color: var(--primary-brand);
 	color: #ffffff;
 
-	width: 169px;
+	min-width: 169px;
 	height: 56px;
+
+	margin-top: 48px;
 
 	font-family: "Roboto";
 	font-style: normal;
@@ -207,10 +222,14 @@ address {
 }
 
 /* Quality section */
+.quality {
+	background-color: teal;
+}
 
-.quality.container {
+.container.quality {
 	padding-top: 120px;
 	padding-bottom: 60px;
+	background-color: tomato;
 }
 
 .quality-list {
@@ -243,8 +262,13 @@ address {
 /* Gallery section */
 
 .gallery {
+	background-color: #31d0aa;
+}
+
+.gallery.container {
 	padding-top: 60px;
 	padding-bottom: 120px;
+	background-color: tomato;
 }
 
 h2.gallery-title {
